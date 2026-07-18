@@ -1,8 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-
-
 const customClassName = ({ isActive }) =>
   "menu__link" + (isActive ? " menu__link--active" : "");
 
