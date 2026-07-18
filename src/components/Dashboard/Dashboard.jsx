@@ -8,7 +8,7 @@ function Dashboard() {
       <p>
         The #1 Destination for Emoji Reviews on the World Wide Web Since 2020!
       </p>
-      <Link to="/reviews">click here to see my latest reviews!</Link>
+      <Link to="/reviews">c lick here to see my latest reviews!</Link>
     </div>
   );
 }
