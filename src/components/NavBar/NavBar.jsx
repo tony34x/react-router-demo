@@ -1,10 +1,13 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
-const customClassName = ({ isActive }) =>
-  "menu__link" + (isActive ? " menu__link--active" : "");
+
+
 
 function NavBar() {
+  const customClassName = ({ isActive }) =>
+  "menu__link" + (isActive ? " menu__link--active" : "");
+  
   return (
     <nav className="menu">
       <NavLink to="/" className={customClassName}>
