@@ -1,5 +1,5 @@
-import "./AboutMe.css"; // New import
-import { Link } from 'react-router-dom'; // New import
+import "./AboutMe.css"; 
+import { Link } from 'react-router-dom'; 
 
 function AboutMe() {
   // Add the classNames shown below so the styles are applied.
