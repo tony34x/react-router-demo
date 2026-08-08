@@ -6,6 +6,10 @@ import Dashboard from "../Dashboard/Dashboard";
 import Reviews from "../Reviews/Reviews";
 import AboutMe from "../AboutMe/AboutMe";
 import AboutUs from "../AboutUs/AboutUs";
+import Contact from '../AboutMe/Contact';
+import Hobbies from '../AboutMe/Hobbies';
+import MyStory from '../AboutMe/MyStory'
+
 
 function App() {
   return (
