@@ -1,5 +1,5 @@
-import "./AboutMe.css"; 
-import { Link } from 'react-router-dom'; 
+import "./AboutMe.css";
+import { Outlet, Link } from "react-router-dom";
 
 function AboutMe() {
   // Add the classNames shown below so the styles are applied.
@@ -18,8 +18,9 @@ function AboutMe() {
         </li>
       </ul>
       <p>I&apos;m a simple person. I see Emojis, I write reviews.</p>
+      <Outlet />
     </div>
-  )
+  );
 }
 
 export default AboutMe;
