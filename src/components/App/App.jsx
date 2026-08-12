@@ -31,15 +31,16 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/reviews" element={<Reviews reviews />} />
+        <Route path="/reviews" element={<Reviews reviews={reviews} />} />
         <Route path="/about-me" element={<AboutMe />}>
           <Route path="contact" element={<Contact />} />
           <Route path="hobbies" element={<Hobbies />} />
           <Route path="my-story" element={<MyStory />} />
         </Route>
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/about-us/mission" element={<SiteMission />} />
-        <Route path="/about-us/history" element={<SiteHistory />} />
+        <Route path="/about-us" element={<AboutUs />}>
+          <Route path="mission" element={<SiteMission />} />
+          <Route path="history" element={<SiteHistory />} />
+        </Route>
       </Routes>
     </div>
   );
