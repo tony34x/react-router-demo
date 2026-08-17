@@ -1,4 +1,5 @@
 import "./Reviews.css";
+import { Link } from "react-router-dom";
 
 function Reviews({ reviews }) {
   return (
