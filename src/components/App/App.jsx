@@ -32,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/reviews" element={<Reviews reviews={reviews} />} />
+        <Route path="/reviews/:reviewId" element={<Review reviews={reviews} />} />
         <Route path="/about-me" element={<AboutMe />}>
           <Route path="contact" element={<Contact />} />
           <Route path="hobbies" element={<Hobbies />} />
