@@ -18,6 +18,9 @@ function Reviews({ reviews }) {
           <Link to={`/reviews/${index + 1}`}>Read more</Link>
         </li>
       ))}
+     <button type="button" onClick={() => navigate("/reviews")}>
+            Back to the review list
+          </button>
     </ul>
   );
 }
