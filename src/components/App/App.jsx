@@ -5,6 +5,7 @@ import "./App.css";
 import Header from "../Header/Header";
 import Dashboard from "../Dashboard/Dashboard";
 import Reviews from "../Reviews/Reviews";
+import Review from "../Reviews/Review";
 import AboutMe from "../AboutMe/AboutMe";
 import AboutUs from "../AboutUs/AboutUs";
 import SiteHistory from "../AboutUs/SiteHistory";

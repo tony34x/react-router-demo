@@ -1,22 +1,19 @@
-import "./Review.css";
-import { useParams } from "react-router-dom";
+import "./Reviews.css";
+import { Link } from "react-router-dom";
 
-function Review({ reviews }) {
-  const params = useParams();
-  let id = params.reviewId;
-  id = id - 1;
-
+function Reviews({ reviews }) {
   return (
-    <div className="review">
-      {reviews && (
-        <div className="review__item">
-          <h3>{reviews[id]?.title}</h3>
-          <p>{reviews[id]?.text}</p>
-          <p className="review__rating">Final rating:{reviews[id]?.rating}/5</p>
-        </div>
-      )}
-    </div>
+    <ul className="reviews">
+      {reviews.map((review, index) => (
+        <li className="reviews__item" key={review._id ?? index}>
+          <h3>{review.title}</h3>
+          <p>{review.text}</p>
+          <p className="review__rating">Final rating: {review.rating}/5</p>
+          <Link to={`/reviews/${index + 1}`}>Read more</Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
-export default Review;
+export default Reviews;
