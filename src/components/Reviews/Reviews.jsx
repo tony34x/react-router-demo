@@ -1,3 +1,7 @@
+// TODO: Pick up here tomorrow. 
+// Current status: Review item button is set up to use useNavigate() to send users back to the "/reviews" list.
+// Next step: Continue building out the next feature or lesson step.
+
 import "./Reviews.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
 
