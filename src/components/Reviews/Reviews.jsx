@@ -1,7 +1,12 @@
 import "./Reviews.css";
-import { Link } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
+
 
 function Reviews({ reviews }) {
+  const params = useParams();
+  let id = params.reviewId;
+  id = id - 1;
+  
   return (
     <ul className="reviews">
       {reviews.map((review, index) => (
