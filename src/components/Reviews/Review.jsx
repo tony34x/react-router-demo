@@ -23,5 +23,3 @@ function Review({ reviews }) {
 }
 
 export default Review;
-// useNavigate is not defined
-//     at Review (Review.jsx:5:21)
