@@ -1,6 +1,4 @@
-// TODO: Pick up here tomorrow. 
-// Current status: Review item button is set up to use useNavigate() to send users back to the "/reviews" list.
-// Next step: Continue building out the next feature or lesson step.
+// TODO: Finish the rest of the buttons for the About Me and About Us pages to route the user back to the home page.
 
 import "./Reviews.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
@@ -22,9 +20,6 @@ function Reviews({ reviews }) {
           <Link to={`/reviews/${index + 1}`}>Read more</Link>
         </li>
       ))}
-     <button type="button" onClick={() => navigate("/reviews")}>
-            Back to the review list
-          </button>
     </ul>
   );
 }

@@ -1,7 +1,8 @@
 import "./Reviews.css";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Review({ reviews }) {
+  const navigate = useNavigate();
   const { reviewId } = useParams();
   const review = reviews[Number(reviewId) - 1];
 
@@ -14,8 +15,13 @@ function Review({ reviews }) {
       <h3>{review.title}</h3>
       <p>{review.text}</p>
       <p className="review__rating">Final rating: {review.rating}/5</p>
+      <button type="button" onClick={() => navigate("/reviews")}>
+        Back to the review list
+      </button>
     </article>
   );
 }
 
 export default Review;
+// useNavigate is not defined
+//     at Review (Review.jsx:5:21)
