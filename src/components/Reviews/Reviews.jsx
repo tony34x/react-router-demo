@@ -2,8 +2,6 @@
 
 import "./Reviews.css";
 import { useParams, useNavigate, Link } from "react-router-dom";
-
-
 function Reviews({ reviews }) {
   const navigate = useNavigate();
   const params = useParams();
@@ -20,6 +18,9 @@ function Reviews({ reviews }) {
           <Link to={`/reviews/${index + 1}`}>Read more</Link>
         </li>
       ))}
+       <button type="button" onClick={() => navigate("/")}>
+        Back to the home page
+      </button>
     </ul>
   );
 }

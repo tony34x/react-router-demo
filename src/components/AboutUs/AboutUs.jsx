@@ -1,8 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; 
 
 import "./AboutUs.css";
 
 function AboutUs() {
+  const navigate = useNavigate();
+
   return (
     <main className="about-us">
       <ul className="links">
@@ -15,6 +18,9 @@ function AboutUs() {
       </ul>
       <p> you can find out more information about our site here.</p>
       <Outlet />
+       <button type="button" onClick={() => navigate("/")}>
+        Back to the home page
+      </button>
     </main>
   );
 }

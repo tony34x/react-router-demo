@@ -22,7 +22,7 @@ function AboutMe() {
       <p>I&apos;m a simple person. I see Emojis, I write reviews.</p>
       <Outlet />
         <button type="button" onClick={() => navigate("/")}>
-        Back to the review list
+        Back to the home page
       </button>
     </div>
   );
