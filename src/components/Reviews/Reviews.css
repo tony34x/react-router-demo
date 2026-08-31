@@ -35,6 +35,18 @@
   margin-top: 20px;
 }
 
+.reviews__back-button {
+  list-style-type: none;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 12px 20px;
+  color: #437dff;
+  background-color: #e8e8e8;
+  border-radius: 12px;
+  border: none;
+  margin-top: 20px;
+}
+
 p.review__rating {
   margin-top: 20px;
   font-size: 16px;

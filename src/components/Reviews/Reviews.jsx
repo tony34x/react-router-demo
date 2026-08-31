@@ -18,7 +18,11 @@ function Reviews({ reviews }) {
           <Link to={`/reviews/${index + 1}`}>Read more</Link>
         </li>
       ))}
-       <button type="button" onClick={() => navigate("/")}>
+       <button
+        className="reviews__back-button"
+        type="button"
+        onClick={() => navigate("/")}
+      >
         Back to the home page
       </button>
     </ul>
