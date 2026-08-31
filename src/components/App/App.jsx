@@ -13,6 +13,7 @@ import SiteMission from "../AboutUs/SiteMission";
 import Contact from "../AboutMe/Contact";
 import Hobbies from "../AboutMe/Hobbies";
 import MyStory from "../AboutMe/MyStory";
+import PageNotFound from "../PageNotFound/PageNotFound";
 
 function App() {
   const [reviews, setReviews] = useState([]);
@@ -43,6 +44,7 @@ function App() {
           <Route path="mission" element={<SiteMission />} />
           <Route path="history" element={<SiteHistory />} />
         </Route>
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
   );
